@@ -36,14 +36,17 @@ namespace LineComparisionProblem
 
             double totalLength2 = Math.Sqrt(sumOfLine2);
             Console.WriteLine(" Total Length of Line " + totalLength2);
-            bool status = totalLength1.Equals(totalLength2);
-            if (status)
+            if (totalLength1.CompareTo(totalLength2) > 0)
             {
-                Console.WriteLine("Line1 is equal to Line2");
+                Console.WriteLine("Line1 is greater than Line2");
+            }
+            else if (totalLength1.CompareTo(totalLength2) < 0)
+            {
+                Console.WriteLine("Line2 is greater than line1");
             }
             else
             {
-                Console.WriteLine("Line1 is not equal to Line2");
+                Console.WriteLine("Line1 is equal to Line2");
             }
         }
 
