@@ -49,6 +49,5 @@ namespace LineComparisionProblem
                 Console.WriteLine("Line1 is equal to Line2");
             }
         }
-
     }
 }
